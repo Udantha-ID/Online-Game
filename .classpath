@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Vehicle-Spare-Parts-Management-System/src/main/java"/>
+	<classpathentry kind="lib" path="Vehicle-Spare-Parts-Management-System/WebContent/WEB-INF/lib/javax.servlet-3.1.jar"/>
+	<classpathentry kind="lib" path="Vehicle-Spare-Parts-Management-System/WebContent/WEB-INF/lib/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="Vehicle-Spare-Parts-Management-System/WebContent/WEB-INF/lib/jstl-api-1.2.jar"/>
+	<classpathentry kind="lib" path="Vehicle-Spare-Parts-Management-System/WebContent/WEB-INF/lib/mysql-connector-java-5.1.48.jar"/>
+	<classpathentry kind="lib" path="Vehicle-Spare-Parts-Management-System/WebContent/WEB-INF/lib/servlet-api.jar"/>
+	<classpathentry kind="output" path="Vehicle-Spare-Parts-Management-System/build/classes"/>
+</classpath>

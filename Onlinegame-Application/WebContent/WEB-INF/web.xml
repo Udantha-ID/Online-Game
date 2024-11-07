@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>/vehicle_spare_part_Management</display-name>
+  
+  <error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/Error.jsp</location>
+	</error-page>
+	
+	<welcome-file-list>
+        <welcome-file>home.jsp</welcome-file>
+    </welcome-file-list>
+    
+    
+    <!-- login -->
+    <servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>OnlineGame.web.LoginServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<!-- logout -->
+    <servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>OnlineGame.web.LogoutServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Register -->
+    <servlet>
+		<servlet-name>RegisterSevlet</servlet-name>
+		<servlet-class>OnlineGame.web.RegisterSevlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>RegisterSevlet</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
+    <!-- User -->
+     <servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>OnlineGame.web.UserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/insertUser</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>list_user</servlet-name>
+		<servlet-class>OnlineGame.web.UserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/list_user</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateUser</servlet-name>
+		<servlet-class>OnlineGame.web.UserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/updateUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editUser</servlet-name>
+		<servlet-class>OnlineGame.web.UserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/editUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>newUser</servlet-name>
+		<servlet-class>OnlineGame.web.UserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/newUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteUser</servlet-name>
+		<servlet-class>OnlineGame.web.UserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/deleteUser</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!--Game  -->
+	
+	
+	<servlet>
+		<servlet-name>GameServlet</servlet-name>
+		<servlet-class>OnlineGame.web.GameServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GameServlet</servlet-name>
+		<url-pattern>/insertGame</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>list_game</servlet-name>
+		<servlet-class>OnlineGame.web.GameServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GameServlet</servlet-name>
+		<url-pattern>/list_game</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateGame</servlet-name>
+		<servlet-class>OnlineGame.web.GameServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GameServlet</servlet-name>
+		<url-pattern>/updateGame</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editGame</servlet-name>
+		<servlet-class>OnlineGame.web.GameServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GameServlet</servlet-name>
+		<url-pattern>/editGame</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>newGame</servlet-name>
+		<servlet-class>OnlineGame.web.GameServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GameServlet</servlet-name>
+		<url-pattern>/newGame</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteGame</servlet-name>
+		<servlet-class>OnlineGame.web.GameServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GameServlet</servlet-name>
+		<url-pattern>/deleteGame</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	<!--Payment  -->
+	
+	
+	<servlet>
+		<servlet-name>PaymentServlet</servlet-name>
+		<servlet-class>OnlineGame.web.PaymentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentServlet</servlet-name>
+		<url-pattern>/insertPayment</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>list_payment</servlet-name>
+		<servlet-class>OnlineGame.web.PaymentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentServlet</servlet-name>
+		<url-pattern>/list_payment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updatePayment</servlet-name>
+		<servlet-class>OnlineGame.web.PaymentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentServlet</servlet-name>
+		<url-pattern>/updatePayment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editPayment</servlet-name>
+		<servlet-class>OnlineGame.web.PaymentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentServlet</servlet-name>
+		<url-pattern>/editPayment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>newPayment</servlet-name>
+		<servlet-class>OnlineGame.web.PaymentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentServlet</servlet-name>
+		<url-pattern>/newPayment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deletePayment</servlet-name>
+		<servlet-class>OnlineGame.web.PaymentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentServlet</servlet-name>
+		<url-pattern>/deletePayment</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!--Feedback  -->
+	
+	
+	<servlet>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<servlet-class>OnlineGame.web.FeedbackServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<url-pattern>/insertFeedback</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>list_feedback</servlet-name>
+		<servlet-class>OnlineGame.web.FeedbackServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<url-pattern>/list_feedback</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateFeedback</servlet-name>
+		<servlet-class>OnlineGame.web.FeedbackServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<url-pattern>/updateFeedback</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editFeedback</servlet-name>
+		<servlet-class>OnlineGame.web.FeedbackServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<url-pattern>/editFeedback</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>newFeedback</servlet-name>
+		<servlet-class>OnlineGame.web.FeedbackServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<url-pattern>/newFeedback</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteFeedback</servlet-name>
+		<servlet-class>OnlineGame.web.FeedbackServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackServlet</servlet-name>
+		<url-pattern>/deleteFeedback</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!--GameUser  -->
+	
+	
+	<servlet>
+		<servlet-name>GameByUserServlet</servlet-name>
+		<servlet-class>OnlineGame.web.GameByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GameByUserServlet</servlet-name>
+		<url-pattern>/insertGameUser</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>sell_Item</servlet-name>
+		<servlet-class>OnlineGame.web.GameByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GameByUserServlet</servlet-name>
+		<url-pattern>/sell_Item</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateGameUser</servlet-name>
+		<servlet-class>OnlineGame.web.GameByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GameByUserServlet</servlet-name>
+		<url-pattern>/updateGameUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editGameUser</servlet-name>
+		<servlet-class>OnlineGame.web.GameByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GameByUserServlet</servlet-name>
+		<url-pattern>/editGameUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>newGameUser</servlet-name>
+		<servlet-class>OnlineGame.web.GameByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GameByUserServlet</servlet-name>
+		<url-pattern>/newGameUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteGameUser</servlet-name>
+		<servlet-class>OnlineGame.web.GameByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GameByUserServlet</servlet-name>
+		<url-pattern>/deleteGameUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>listAllGames</servlet-name>
+		<servlet-class>OnlineGame.web.GameByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GameByUserServlet</servlet-name>
+		<url-pattern>/listAllGames</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>addToCart</servlet-name>
+		<servlet-class>OnlineGame.web.GameByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GameByUserServlet</servlet-name>
+		<url-pattern>/addToCart</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!--PaymentUser  -->
+	
+	
+	<servlet>
+		<servlet-name>PaymentByUser</servlet-name>
+		<servlet-class>OnlineGame.web.PaymentByUser</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentByUser</servlet-name>
+		<url-pattern>/insertPaymentUser</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>list_paymentUser</servlet-name>
+		<servlet-class>OnlineGame.web.PaymentByUser</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentByUser</servlet-name>
+		<url-pattern>/list_paymentUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updatePaymentUser</servlet-name>
+		<servlet-class>OnlineGame.web.PaymentByUser</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentByUser</servlet-name>
+		<url-pattern>/updatePaymentUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editPaymentUser</servlet-name>
+		<servlet-class>OnlineGame.web.PaymentByUser</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentByUser</servlet-name>
+		<url-pattern>/editPaymentUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>newPaymentUser</servlet-name>
+		<servlet-class>OnlineGame.web.PaymentByUser</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentByUser</servlet-name>
+		<url-pattern>/newPaymentUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deletePaymentUser</servlet-name>
+		<servlet-class>OnlineGame.web.PaymentByUser</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentByUser</servlet-name>
+		<url-pattern>/deletePaymentUser</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!--FeedbackUser  -->
+	
+	
+	<servlet>
+		<servlet-name>FeedbackByUserServlet</servlet-name>
+		<servlet-class>OnlineGame.web.FeedbackByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackByUserServlet</servlet-name>
+		<url-pattern>/insertFeedbackUser</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>list_feedbackUser</servlet-name>
+		<servlet-class>OnlineGame.web.FeedbackByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackByUserServlet</servlet-name>
+		<url-pattern>/list_feedbackUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateFeedbackUser</servlet-name>
+		<servlet-class>OnlineGame.web.FeedbackByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackByUserServlet</servlet-name>
+		<url-pattern>/updateFeedbackUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editFeedbackUser</servlet-name>
+		<servlet-class>OnlineGame.web.FeedbackByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackByUserServlet</servlet-name>
+		<url-pattern>/editFeedbackUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>newFeedbackUser</servlet-name>
+		<servlet-class>OnlineGame.web.FeedbackByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackByUserServlet</servlet-name>
+		<url-pattern>/newFeedbackUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteFeedbackUser</servlet-name>
+		<servlet-class>OnlineGame.web.FeedbackByUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedbackByUserServlet</servlet-name>
+		<url-pattern>/deleteFeedbackUser</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
